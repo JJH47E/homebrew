@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap');
+
+            #main{
+                background-color: #f7f7f5;
+                width: 100%;
+            }
+
+            .carousel{
+                width: 100%;
+            }
+
+            #navbar{
+                background-color: #f7f7f5;
+                padding-right: 0px;
+                padding-left: 0px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+            }
+
+            #navtext{
+                padding-right: 0px;
+                padding-left: 10px;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                display: inline;
+                color: black;
+            }
+            
+            #navtext:visited{
+                color: black;
+            }
+
+            #navtext:active{
+                color: black;
+            }
+
+            #navtext:hover{
+                color: black;
+            }
+
+            #wlink {
+                color: white;
+                text-decoration: underline;
+            }
+
+            #wlink:visited {
+                color: white;
+                text-decoration: underline;
+            }
+
+            #wlink:active {
+                color: white;
+                text-decoration: underline;
+            }
+
+            #wlink:hover {
+                color: white;
+                text-decoration: underline;
+            }
+
+            #car{
+                background-color: black;
+            }
+
+            #game{
+                padding-left: 2.5%;
+                padding-right: 2.5%;
+            }
+
+            .zoom {
+                padding: 0px;
+                background-color: none;
+                transition: transform .2s; /* Animation */
+                margin: auto;
+            }
+
+            .zoom:hover {
+                transform: scale(1.05); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+            }
+
+            .caption {
+                text-align: center;
+                color: black;
+                padding-top: 2px;
+                padding-bottom: 2px;
+                font-size: 14px;
+            }
+
+            .splash {
+                position: fixed;
+            }
+
+            #spl {
+                text-align: center;
+                height: 40vh;
+                display: inline-block;
+            }
+
+            #spltxt {
+                text-align: center;
+                font-size: 6vh;
+                padding-top: 5vh;
+                color: #ffffff;
+                font-family: 'Nunito', sans-serif;
+                padding-right: 0px;
+            }
+            #spltxtsub {
+                text-align: center;
+                font-size: 2vh;
+                padding-top: 0px;
+                color: #ffffff;
+                font-family: 'Nunito', sans-serif;
+                padding-right: 0px;
+            }
+
+            #cen {
+                text-align: center;
+                font-size: 36px;
+                color: white;
+                font-family: 'Nunito', sans-serif;
+            }
+
+            .bg {
+                width: 100%;
+                height: 100%;
+                position: fixed;
+                background-image: url("resources/bg.png");
+                background-repeat: no-repeat;
+                background-color: #000000;
+                background-size: auto;
+            }
+
+            #img {
+                display: inline-block;
+            }
+
+            html, body {
+                max-width: 100%;
+                overflow-x: hidden;
+            }
+
+            .item {
+                width: 100%;
+            }
+
+            #itemimg {
+                display: inline-block;
+                vertical-align: middle;
+            }
+
+            #itemtxt {
+                display: inline-block;
+                text-overflow: ellipsis;
+                max-width: 100%;
+            }
+
+            #mid {
+                text-align: center;
+                color: black;
+            }
+
+            .more {
+                color: black;
+            }
+
+            .more:visited {
+                text-align: center;
+                color: black;
+            }
+
+            .more:active {
+                text-align: center;
+                color: black;
+            }
+
+            .more:hover {
+                text-align: center;
+                color: black;
+            }
+        </style>
+        <title>JJH47E │ Homebrew</title>
+    </head>
+    <body>
+        <div class="bg"></div>
+        <!--Start of navbar-->
+        <div class="row">
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12" id="navbar">
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                    <a id="navtext" href="https://jjh47e.github.io/">Home</a>
+                    <a id="navtext" href="/games/">Games</a>
+                    <a id="navtext" href="/homebrew/">Homebrew</a>
+                </div>
+            </div>
+        </div>
+        <!--End of navbar-->
+        <div class="row">
+            <div class="col-xs-12 col-xs-offset-0 col-sm-12 col-sm-offset-0 col-md-12 col-md-offset-0 col-lg-12 col-lg-offset-0" id="spl">
+                <div id="spltxt">
+                    <span style="color:#ffffff">Homebrew</span>
+                </div>
+                <div id="spltxtsub">
+                    Collection of my homebrew packages
+                </div>
+            </div>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12 col-md-offset-0 col-lg-12 col-lg-offset-0" id="main">
+            <div class="col-xs-12 col-sm-12 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2">
+                <br>
+                <span style="font-weight: bold; font-size: 200%; color: black;">Homebrew</span>
+                <br>
+                <br>
+                <!--Begin item display-->
+                <div class="row">
+                    <div class="item">
+                        <div class="col-sm-4 col-xs-4 col-md-3 col-lg-3" id="itemimg">
+                            <a href="https://github.com/JJH47E/snake"><img src="resources/gb.png" width="100%"></a>
+                        </div>
+                        <div class="col-sm-8 col-sm-offset-0 col-xs-8 col-xs-offset-0 col-md-9 col-md-offset-0 col-lg-9 col-lg-offset-0" id="itemtxt">
+                            Snake is a remake of the classic game snake for the PS Vita. It includes multiple themes and difficulties. 
+                        </div>
+                        <br>
+                    </div>
+                </div>
+                <!--End item display-->
+                <br>
+                <!--Begin item display-->
+                <div class="row">
+                    <div class="item">
+                        <div class="col-sm-4 col-xs-4 col-md-3 col-lg-3" id="itemimg">
+                            <a href="https://github.com/JJH47E/memorygame"><img src="resources/mem.png" width="100%"></a>
+                        </div>
+                        <div class="col-sm-8 col-sm-offset-0 col-xs-8 col-xs-offset-0 col-md-9 col-md-offset-0 col-lg-9 col-lg-offset-0" id="itemtxt">
+                            MemoryGame is a simple breain training game for the PS Vita.
+                        </div>
+                        <br>
+                    </div>
+                </div>
+                <!--End item display-->
+                <br>
+                <br>
+            </div>
+        </div>
+    </body>
+</html>
